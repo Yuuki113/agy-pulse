@@ -72,14 +72,11 @@ powershell -ExecutionPolicy Bypass -File .\agy-pulse.ps1 -Uninstall
 
 ## 常见问题
 
-### 提示「未检测到 agy CLI（无法读取官方配额）」怎么办？
+### 提示「未检测到 agy CLI」或更新 Antigravity 后额度消失？
 
-插件的云端剩余额度依赖官方 `agy` CLI（`%LOCALAPPDATA%\agy\bin\agy.exe`）。v2.0.0 起，安装脚本会自动读取 Windows 系统代理设置，并**优先完成 `agy` CLI 安装后再释放插件**（避免插件抢先启动导致首次检测失败）。
-
-如果因当前网络无法直连 `antigravity.google` 导致未成功安装：
-1. 开启系统代理或 TUN 模式；
-2. 重新执行上方「一键安装」命令（或单独执行 `irm https://antigravity.google/cli/install.ps1 | iex`）；
-3. 安装完成后，点击悬浮详情面板右上角 **`↻`** 即可立即同步官方额度。
+插件的云端剩余额度依赖官方 `agy` CLI（`%LOCALAPPDATA%\agy\bin\agy.exe`）。由于 Antigravity 桌面端升级安装程序在覆盖更新时会清理 `%LOCALAPPDATA%\agy` 目录，AGY Pulse 已内置双重自愈机制：
+1. **跨版本镜像保护**：自动在插件受保护数据目录维护 `agy.exe` 镜像，Antigravity 客户端更新重启后会自动无感恢复，不再丢失额度；
+2. **后台自动补装**：若首次安装时未开启代理导致缺失 `agy` CLI，只需**开启系统代理 / TUN 模式后点击悬浮详情面板右上角 `↻`**，后台即会自动拉取补装并立即同步官方额度。
 
 ---
 

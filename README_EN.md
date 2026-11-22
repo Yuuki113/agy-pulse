@@ -72,14 +72,11 @@ Open `Skills & Customizations -> Plugins` in the left sidebar of Antigravity, fi
 
 ## Troubleshooting
 
-### Seeing `"agy CLI not found"` in the Quota section?
+### Seeing `"agy CLI not found"` or quota missing after updating Antigravity?
 
-Live account quota uses the official `agy` CLI (`%LOCALAPPDATA%\agy\bin\agy.exe`). Since v2.0.0, the installer automatically reads Windows System Proxy settings and **installs `agy` CLI before extracting the plugin**.
-
-If `antigravity.google` was unreachable during setup:
-1. Enable your proxy or TUN mode;
-2. Re-run the one-line installer above (or run `irm https://antigravity.google/cli/install.ps1 | iex`);
-3. Click **`↻`** in the expanded HUD card to sync immediately.
+Live account quota uses the official `agy` CLI (`%LOCALAPPDATA%\agy\bin\agy.exe`). Because the Antigravity Desktop NSIS updater wipes `%LOCALAPPDATA%\agy` during app upgrades, AGY Pulse includes built-in self-healing:
+1. **Update-Proof Mirror**: Automatically keeps a protected mirror of `agy.exe` inside the plugin's data directory and restores it transparently after Antigravity updates;
+2. **One-Click Background Auto-Install**: If `antigravity.google` was unreachable during initial setup, simply **enable your proxy / TUN mode and click `↻`** in the expanded HUD card — AGY Pulse will automatically install `agy` CLI in the background and sync your quota immediately.
 
 ---
 
