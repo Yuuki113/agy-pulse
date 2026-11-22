@@ -56,7 +56,7 @@ Open `Skills & Customizations -> Plugins` in the left sidebar of Antigravity, fi
 2. **Click-to-Expand Detail Card (Zero Accidental Hover Popups)**
    - **Actual Routed Model & Prompt Cache Hit Rate**: Top header displays the live routed model for the active step (distinguishing `Gemini 4 Neon` vs `Gemini 4 Hydrogen` in Orchestrator mode) alongside prompt cache hit rate.
    - **Dual-Group Quota Breakdown**: Shows `Weekly` (left) and `5h Limit` (right) bars and compact reset countdowns for both `Gemini` and `Claude / GPT`.
-   - **Active Chats Speed List**: Shows only currently generating conversations with each chat's **actual routed model badge** (e.g. `G4 Neon` / `G4 Hydrogen` / `G4 Carbon`), context usage, and live `tok/s` (idle chats are hidden).
+   - **Active Chats Speed List (One-Click Jump)**: Shows only currently generating conversations with each chat's **actual routed model badge** (e.g. `G4 Neon` / `G4 Hydrogen` / `G4 Carbon`), context usage, and live `tok/s` — **click any running chat to jump straight to it** (automatically bridging via official `sidecar.ui.toggleConversation` when the side-pane is open, or falling back to native `Ctrl+K` quick-switch).
 
 3. **Instant EN / 中文 Language Toggle**
    - Automatically detects your system locale on first launch (`zh` for Chinese locales, `en` otherwise).
