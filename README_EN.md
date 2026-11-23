@@ -51,7 +51,7 @@ Open `Skills & Customizations -> Plugins` in the left sidebar of Antigravity, fi
 1. **Minimalist 3-Segment Magnetic Capsule**
    - **Remaining Quota**: Automatically tracks your active model group and surfaces whichever bucket (`Weekly` or `5h`) is tighter.
    - **Real Active Context Window**: Calibrated to Antigravity's actual auto-compaction caps (`512k` for Gemini 4 series, `256k` for Flash, `200k` for Claude), with 3-tier health colors (`<35%` green / `35–75%` amber / `≥75%` red).
-   - **Live Global Total `tok/s`**: Shows the current chat's speed alongside the live aggregate throughput `Σ` across all currently running conversations.
+   - **Live Multi-Mode Speed (`tok/s`)**: Shows current chat speed alongside concurrent throughput, with a persistent 3-mode toggle (**Sum (default) / Avg / Max**) placed right next to **`EN`** (also in the right-click menu and side-pane).
 
 2. **Click-to-Expand Detail Card (Zero Accidental Hover Popups)**
    - **Actual Routed Model & Prompt Cache Hit Rate**: Top header displays the live routed model for the active step (distinguishing `Gemini 4 Neon` vs `Gemini 4 Hydrogen` in Orchestrator mode) alongside prompt cache hit rate.
