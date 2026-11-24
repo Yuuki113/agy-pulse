@@ -62,8 +62,11 @@ Open `Skills & Customizations -> Plugins` in the left sidebar of Antigravity, fi
    - Automatically detects your system locale on first launch (`zh` for Chinese locales, `en` otherwise).
    - Switch anytime via the **`EN` / `中`** button in the expanded HUD header, the capsule right-click menu, or the side-pane dashboard — persisted and synced immediately without restarting.
 
-4. **Built-in Settings (`⚙`) & Auto-Archive Idle Chats**
+4. **Built-in Settings (`⚙`), Usage Analytics & Auto-Archive**
    - Click **`⚙`** in the expanded HUD header (or use the right-click menu / side-pane card) to open the in-place Settings view;
+   - **CC-Switch-Style Usage Analytics (Per-Conversation Token & Share Breakdown)**:
+     - Click the **Usage Analytics** card inside Settings (or right-click the capsule) to inspect compact KPIs and a ranked **By Conversation** breakdown right inside the floating HUD (`Today / 7D / 30D / All`, `Total` vs `Non-Cache` share toggle, `Merge Subagents` rollup, stacked Input/Cache/Output bars, and click-to-jump navigation);
+     - Click **`↗ Full`** (or **Usage** in the side-pane) to open the full web dashboard with **4 KPI cards, pure-SVG 24h/daily stacked trend chart, clickable model distribution donut, detailed per-conversation table (Total, Input, Cache, Output, Cache Hit %, Calls, Est. API reference cost, exact `%` share, expandable model & subagent drawers)**, and **CSV export** — 100% locally parsed with zero cloud uploads.
    - **Auto-Archive Idle Chats**: Disabled by default. When enabled, automatically marks idle conversations inactive beyond the configured threshold (default **1 day**, customizable from `1` to `365` days via `-`/`+`, direct input, or `1 / 3 / 7 / 30d` presets, plus one-click **Archive Now**) while preserving all local logs and skipping active/running conversations.
 
 5. **Native, Non-Intrusive UX**
