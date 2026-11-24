@@ -62,7 +62,11 @@ Open `Skills & Customizations -> Plugins` in the left sidebar of Antigravity, fi
    - Automatically detects your system locale on first launch (`zh` for Chinese locales, `en` otherwise).
    - Switch anytime via the **`EN` / `中`** button in the expanded HUD header, the capsule right-click menu, or the side-pane dashboard — persisted and synced immediately without restarting.
 
-4. **Native, Non-Intrusive UX**
+4. **Built-in Settings (`⚙`) & Auto-Archive Idle Chats**
+   - Click **`⚙`** in the expanded HUD header (or use the right-click menu / side-pane card) to open the in-place Settings view;
+   - **Auto-Archive Idle Chats**: Disabled by default. When enabled, automatically marks idle conversations inactive beyond the configured threshold (default **1 day**, customizable from `1` to `365` days via `-`/`+`, direct input, or `1 / 3 / 7 / 30d` presets, plus one-click **Archive Now**) while preserving all local logs and skipping active/running conversations.
+
+5. **Native, Non-Intrusive UX**
    - **Left-click** to expand/collapse (automatically restores editor focus so typing is never interrupted);
    - **Left-drag** anywhere on the titlebar (position persists across restarts);
    - **Right-click** menu for toggle, language switch, reset position, force refresh, or hide;
