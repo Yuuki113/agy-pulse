@@ -64,9 +64,9 @@ Open `Skills & Customizations -> Plugins` in the left sidebar of Antigravity, fi
 
 4. **Built-in Settings (`⚙`), Usage Analytics & Auto-Archive**
    - Click **`⚙`** in the expanded HUD header (or use the right-click menu / side-pane card) to open the in-place Settings view;
-   - **CC-Switch-Style Usage Analytics (Per-Conversation Token & Share Breakdown)**:
+   - **CC-Switch-Style Usage Analytics (Per-Conversation Share & Per-Call Logs)**:
      - Click the **Usage Analytics** card inside Settings (or right-click the capsule) to inspect compact KPIs and a ranked **By Conversation** breakdown right inside the floating HUD (`Today / 7D / 30D / All`, `Total` vs `Non-Cache` share toggle, `Merge Subagents` rollup, stacked Input/Cache/Output bars, and click-to-jump navigation);
-     - Click **`↗ Full`** (or **Usage** in the side-pane) to open the full web dashboard with **4 KPI cards, pure-SVG 24h/daily stacked trend chart, clickable model distribution donut, detailed per-conversation table (Total, Input, Cache, Output, Cache Hit %, Calls, Est. API reference cost, exact `%` share, expandable model & subagent drawers)**, and **CSV export** — 100% locally parsed with zero cloud uploads.
+     - Click **`↗ Full`** (or **Usage** in the side-pane) to open the full web dashboard with **4 KPI cards, pure-SVG 24h/daily stacked trend chart, clickable model distribution donut, detailed per-conversation table (Total, Input, Cache, Output, Cache Hit %, Calls, Est. API reference cost, exact `%` share, plus expandable model, subagent & per-call breakdown drawers)**, a global **Request Logs** tab (**Model, Input, Output, Cache Hit %, Est. Cost, TTFT, Total Duration, Output Speed `tok/s`, and Status** per LLM turn), and **CSV export** — 100% locally parsed with zero cloud uploads.
    - **Auto-Archive Idle Chats**: Disabled by default. When enabled, automatically marks idle conversations inactive beyond the configured threshold (default **1 day**, customizable from `1` to `365` days via `-`/`+`, direct input, or `1 / 3 / 7 / 30d` presets, plus one-click **Archive Now**) while preserving all local logs and skipping active/running conversations.
 
 5. **Native, Non-Intrusive UX**
